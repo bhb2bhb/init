@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install htop, tmux, vim, wget
+sudo apt install htop tmux vim wget
 
 wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
@@ -11,7 +11,7 @@ curl -so ~/miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-4.7.10-Li
  && rm ~/miniconda.sh
 export PATH=${HOME}/miniconda/bin:$PATH
 source ~/.bashrc
-conda install pytorch=1.1.0 -c pytorch
+conda install -y pytorch=1.1.0 -c pytorch
 
 git clone https://github.com/NVIDIA/apex ~/apex
 
