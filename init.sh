@@ -18,6 +18,6 @@ git clone https://github.com/NVIDIA/apex ~/apex
 cd ~/apex && git reset --hard 1603407bf49c7fc3da74fceb6a6c7b47fece2ef8 && \
     python setup.py install --user --cuda_ext --cpp_ext
 
-cd ~ && rm -r ~/apex
+cd ~ && rm -rf ~/apex
 
 pip install tensorboardX six numpy tqdm path.py pandas scikit-learn py-rouge scipy
